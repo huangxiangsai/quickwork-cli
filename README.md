@@ -8,9 +8,13 @@ nodejs-based a apache tool
 只要做得工作是：
 
 >>  配置项目地址
+
 >>  查看单个或所有配置的项目地址
+
 >>  切换apache的DocumentRoot 地址
+
 >>  启动apache
+
 >>  停止apache
 
 #Usage
