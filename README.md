@@ -2,7 +2,7 @@
 
 nodejs-based a apache tool 
 
-基于nodejs实现的apache 启动停止及项目快速切换工具
+基于nodejs实现的apache 启动停止及项目快速切换命令行工具
 
 #可以干什么
 只要做得工作是：
