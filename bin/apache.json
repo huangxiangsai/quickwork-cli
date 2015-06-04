@@ -1,0 +1,7 @@
+{
+  "apache" : {
+          "path" : "D:/tool/PHP/Apache24/conf/httpd.conf",
+          "listen" : "80"
+      }
+
+}

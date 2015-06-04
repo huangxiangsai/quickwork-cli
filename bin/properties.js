@@ -43,24 +43,21 @@ Properties.prototype = {
 				var key = contentline[i].split("=")[0];
 				var value = contentline[i].split('=')[1];
 
-				for(var i =0 ; i < dataArray.length ;i++){
-					var data = dataArray[i];
+				for(var j =0 ; j < dataArray.length ;j++){
+					var data = dataArray[j];
 					if( data.key ==  key && !!data.value){//已有 修改value
 						contentline[i] = key +"="+data.value;
 						delete data.key;
 					}
 				}
-
-				
 			}			
 		}
 
 		for(var i =0 ; i < dataArray.length ;i++){
 			var data = dataArray[i];
-			for(var key in data){
-				data[key].des && contentline.push("#"+data[key].des);
-				data[key].value && contentline.push(key+"="+data[key].value);
-			}
+			// console.log(data);
+			data.des && contentline.push("#"+data.des);
+			data.key && data.value && contentline.push(data.key+"="+data.value);
 		}
 		var content = contentline.join("|").replace(/\|/g, '\n');
 		
@@ -131,7 +128,7 @@ Properties.prototype = {
 
 
 exports.pro = function (path) {
-	path = path || "project.properties";
+	path = path || __dirname+"\\project.properties";
 	return new Properties(path);
 }
 
