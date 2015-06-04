@@ -18,14 +18,12 @@ nodejs-based a apache tool
 >>  停止apache
 
 #Usage
-first mark sure apache server is not disabled , there is `apache -k start` 、 `apache -k stop` and `apache -k restart` 
-command line
+首先确保apache server能正常使用，并且  `apache -k start` 、 `apache -k stop` and `apache -k restart`这些命令都是可用的。
 
+在使用前，需要先配置 `apache.json` 添加apache的lib路径
+所以需要对`apache.json`进行修改 
 
-before using,  by `apache.json` ,to get apache project addr 
-
-so you need change `apache.json`   e.g.:
-
+  
     {
       "apache" : {
               "path" : "",
@@ -34,44 +32,42 @@ so you need change `apache.json`   e.g.:
     
     }
 
+或者可以通过命令来添加apache lib路径
 
-or
-
-by command line :
 
     qk --config path [path]
 
-then 
 
-add project address by below command :
+
+设置项目路径 key 项目进行切换时需要,  address 实际的项目路径  :
 
     qk -a, -add [key] [address]
 
 
-active project by below command :
+通过key 切换至指定的项目上 :
 
     qk --switch [key]
 
-serach someting one project address by below command :
+查看已经配置的所有项目路径 :
 
     qk -f , -find [key]
 
-serach all project address by below command :
+查看已经配置的所有项目路径:
 
     qk -f , -find
 
 
 
-stop apache by below command :
+停止apache :
 
     qk -p , -stop
 
 
-start apache by below command :
+启动apache :
 
     qk -s , -start
 
-restart apache by below command :
+重启apache :
 
     qk -r, -restart
 
