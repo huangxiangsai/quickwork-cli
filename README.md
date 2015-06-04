@@ -39,19 +39,18 @@ or
 
 by command line :
 
-    qk config path [path]
-    qk config listen [listen]
+    qk --config path [path]
 
 then 
 
 add project address by below command :
 
-    qk save [key] [address]
+    qk -a, -add [key] [address]
 
 
 active project by below command :
 
-    qk -a , -active [key]
+    qk --switch [key]
 
 serach someting one project address by below command :
 
@@ -65,12 +64,12 @@ serach all project address by below command :
 
 stop apache by below command :
 
-    qk -sp , -stop
+    qk -p , -stop
 
 
 start apache by below command :
 
-    qk -st , -start
+    qk -s , -start
 
 restart apache by below command :
 
