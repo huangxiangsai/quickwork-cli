@@ -5,7 +5,7 @@ nodejs-based a apache tool
 基于nodejs实现的apache 启动停止及项目快速切换命令行工具
 
 #可以干什么
-只要做得工作是：
+主要做得工作是：
 
 >>  配置项目地址
 
@@ -41,7 +41,7 @@ nodejs-based a apache tool
 
 设置项目路径 key 项目进行切换时需要,  address 实际的项目路径  :
 
-    qk -a, -add [key] [address]
+    qk -a, --add [key] [address]
 
 
 通过key 切换至指定的项目上 :
@@ -50,26 +50,26 @@ nodejs-based a apache tool
 
 查看已经配置的所有项目路径 :
 
-    qk -f , -find [key]
+    qk -f , --find [key]
 
 查看已经配置的所有项目路径:
 
-    qk -f , -find
+    qk -f , --find
 
 
 
 停止apache :
 
-    qk -p , -stop
+    qk -p , --stop
 
 
 启动apache :
 
-    qk -s , -start
+    qk -s , --start
 
 重启apache :
 
-    qk -r, -restart
+    qk -r, --restart
 
 
 
